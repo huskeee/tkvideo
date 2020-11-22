@@ -3,8 +3,8 @@ from setuptools import setup
 with open('README.md') as f:
    readme = f.read()
 
-setup(name = 'tkvideo',
-      version = '0.1.0',
+setup(name = 'tkVideo',
+      version = '0.1',
       description = 'Python module for playing videos (without sound) inside tkinter Label widget using Pillow and imageio',
       long_description = readme,
       long_description_content_type = "text/markdown",

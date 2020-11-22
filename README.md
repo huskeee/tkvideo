@@ -1,7 +1,7 @@
 
 <p align="center">
   <a href="https://github.com/huskeee/tkvideo">
-    <img src="images/logo.png" alt="Logo" >
+    <img src="https://raw.githubusercontent.com/huskeee/tkvideo/master/images/logo.png" alt="Logo" >
   </a>
 
   <h1 align="center">tkVideo</h1>
