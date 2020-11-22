@@ -25,7 +25,7 @@
 	<a href="https://github.com/huskeee/tkvideo/issues">
 		<img src="https://img.shields.io/github/issues/huskeee/tkvideo.svg?style=flat-square" alt="Issues" />
 	</a>
-	<a href="https://github.com/huskeee/tkvideo/blob/master/LICENSE.txt">
+	<a href="https://github.com/huskeee/tkvideo/blob/master/LICENSE">
 		<img src="https://img.shields.io/github/license/huskeee/tkvideo.svg?style=flat-square" alt="MIT License" />
 	</a>
 </p>
