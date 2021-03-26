@@ -43,7 +43,7 @@ tkVideo is a Python module for playing videos in GUIs created with tkinter. It d
 ### Built With
 
 * [tkinter (Python built-in)](https://docs.python.org/3/library/tkinter.html)
-* [imageio](imageio.github.io)
+* [imageio](https://imageio.github.io)
 * [Pillow](https://pypi.org/project/Pillow/)
 
 
@@ -82,7 +82,7 @@ This will create a shim between your code and the module binaries that gets upda
 
 * Import tkinter and tkvideo
 * Create `Tk()` parent and the label you'd like to use
-* Create `tkvideo.tkvideo` object with its parameters (video file path, label name, whether to loop the video or not and size of the video)
+* Create `tkvideo` object with its parameters (video file path, label name, whether to loop the video or not and size of the video)
 * Start the player thread with `<player_name>.play()`
 * Start the Tk main loop
 
@@ -94,7 +94,7 @@ from tkvideo import tkvideo
 root = Tk()
 my_label = Label(root)
 my_label.pack()
-player = tkvideo.tkvideo("C:\\path\\to\\video.mp4", my_label, loop = 1, size = (1280,720))
+player = tkvideo("C:\\path\\to\\video.mp4", my_label, loop = 1, size = (1280,720))
 player.play()
 
 root.mainloop()
