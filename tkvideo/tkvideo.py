@@ -35,7 +35,11 @@ class tkvideo():
         self.label = label
         self.loop = loop
         self.size = size
+        self.stopped = False
     
+    def stop(self):
+        self.stopped = True
+        
     def load(self, path, label, loop):
         """
             Loads the video's frames recursively onto the selected label widget's image parameter.
@@ -43,19 +47,29 @@ class tkvideo():
             or once.
         """
         frame_data = imageio.get_reader(path)
-
+        
+        #set stopped to false (if we load the same video more than once)
+        self.stopped = False
+        
         if loop == 1:
-            while True:
+            while not self.stopped:
                 for image in frame_data.iter_data():
+                    if self.stopped:
+                        break
                     frame_image = ImageTk.PhotoImage(Image.fromarray(image).resize(self.size))
                     label.config(image=frame_image)
                     label.image = frame_image
         else:
             for image in frame_data.iter_data():
+                    if self.stopped:
+                        break
                     frame_image = ImageTk.PhotoImage(Image.fromarray(image).resize(self.size))
                     label.config(image=frame_image)
                     label.image = frame_image
 
+    def stop(self):
+        self.stopped = True
+        
     def play(self):
         """
             Creates and starts a thread as a daemon that plays the video by rapidly going through
