@@ -1,12 +1,6 @@
 """Play moviepy video clips with tkiner"""
-
-try:
-    import Tkinter as tk  # for Python2 (although it has already reached EOL)
-except ImportError:
-    import tkinter as tk  # for Python3
 import threading
 from time import perf_counter, sleep
-import imageio
 from PIL import Image, ImageTk
 
 
@@ -56,7 +50,7 @@ class TkVideo:
                     before = perf_counter()
         else:
             before = perf_counter()
-            for image in frames.iter_data():
+            for image in frames:
                 frame_image = ImageTk.PhotoImage(
                     Image.fromarray(image).resize(self.size)
                 )
