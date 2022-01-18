@@ -1,30 +1,31 @@
 from setuptools import setup
 
-with open('README.md') as f:
-   readme = f.read()
+with open("README.md") as f:
+    readme = f.read()
 
-setup(name = 'tkVideo',
-      version = '0.1',
-      description = 'Python module for playing videos (without sound) inside tkinter Label widget using Pillow and imageio',
-      long_description = readme,
-      long_description_content_type = "text/markdown",
-      classifiers = [
-          'Development Status :: 4 - Beta',
-          'License :: OSI Approved :: MIT License',
-          'Programming Language :: Python :: 3.9',
-          'Topic :: Multimedia :: Video :: Display'
-      ],
-      keywords = 'tkvideo tkinter video display label pillow imageio huskee',      
-      url = 'https://github.com/huskeee/tkvideo',
-      author = 'Xenofon Konitsas (huskee)',
-      author_email = 'konitsasx@gmail.com',
-      license = 'MIT',
-      packages = ['tkvideo'],
-      install_requires = [
-          'imageio',
-          'imageio-ffmpeg',
-          'pillow'
-      ],
-      include_package_data = True,
-      zip_safe = False
+setup(
+    name="tkvideo-moviepy",
+    version="0.1.0",
+    description="Play moviepy video clips with tkiner",
+    long_description=readme,
+    long_description_content_type="text/markdown",
+    classifiers=[
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Topic :: Multimedia :: Video :: Display",
+    ],
+    keywords="tkvideo tkinter video display label pillow imageio huskee moviepy",
+    url="https://github.com/MysteryBlokHed/tkvideo",
+    author="Adam Thompson-SHarpe",
+    author_email="adamthompsonsharpe@gmail.com",
+    license="MIT",
+    packages=["tkvideo"],
+    install_requires=["imageio", "imageio-ffmpeg", "pillow"],
+    include_package_data=True,
+    zip_safe=False,
 )
