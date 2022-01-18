@@ -5,16 +5,17 @@ from PIL import Image, ImageTk
 
 
 class TkVideo:
-    def __init__(self, clip, label, loop=0, size=(640, 360), hz=0):
-        """The main class
+    """The main class
 
-        Args:
-            clip (moviepy.editor.VideoFileClip): The clip to use
-            label (Test): The file label
-            loop (int, optional): Whether to loop the clip. Defaults to 0.
-            size (tuple, optional): The dimensions of the clip. Defaults to (640, 360).
-            hz (int, optional): The framerate of the clip. Defaults to 0.
-        """
+    Args:
+        clip (moviepy.editor.VideoFileClip): The clip to use
+        label (Test): The file label
+        loop (int, optional): Whether to loop the clip. Defaults to 0.
+        size (tuple, optional): The dimensions of the clip. Defaults to (640, 360).
+        hz (int, optional): The framerate of the clip. Defaults to 0.
+    """
+
+    def __init__(self, clip, label, loop=0, size=(640, 360), hz=0):
         self.clip = clip
         self.label = label
         self.loop = loop
