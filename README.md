@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://github.com/huskeee/tkvideo">
-    <img src="https://raw.githubusercontent.com/huskeee/tkvideo/master/images/logo.png" alt="Logo" >
+  <a href="https://github.com/MysteryBlokHed/tkvideo-moviepy">
+    <img src="https://raw.githubusercontent.com/MysteryBlokHed/tkvideo-moviepy/master/images/logo.png" alt="Logo" >
   </a>
 
   <h1 align="center">tkVideo</h1>
@@ -9,31 +9,43 @@
     Python module for playing videos (without sound) inside tkinter Label widget using Pillow and imageio
     <br />
 
+<p align="center">
+  <a href="https://github.com/MysteryBlokHed/tkvideo-moviepy/graphs/contributors">
+    <img
+      src="https://img.shields.io/github/contributors/MysteryBlokHed/tkvideo-moviepy.svg?style=flat-square"
+      alt="Contributors"
+    />
+  </a>
+  <a href="https://github.com/MysteryBlokHed/tkvideo-moviepy/network/members">
+    <img
+      src="https://img.shields.io/github/forks/MysteryBlokHed/tkvideo-moviepy.svg?style=flat-square"
+      alt="Forks"
+    />
+  </a>
+  <a href="https://github.com/MysteryBlokHed/tkvideo-moviepy/stargazers">
+    <img
+      src="https://img.shields.io/github/stars/MysteryBlokHed/tkvideo-moviepy.svg?style=flat-squarem/MysteryBlokHed/tkvideo-moviepy/network/members"
+      alt="Stargazers"
+    />
+  </a>
+  <a href="https://github.com/MysteryBlokHed/tkvideo-moviepy/issues">
+    <img
+      src="https://img.shields.io/github/issues/MysteryBlokHed/tkvideo-moviepy.svg?style=flat-square"
+      alt="Issues"
+    />
+  </a>
+  <a href="https://github.com/MysteryBlokHed/tkvideo-moviepy/blob/master/LICENSE">
+    <img
+      src="https://img.shields.io/github/license/MysteryBlokHed/tkvideo-moviepy.svg?style=flat-square"
+      alt="MIT License"
+    />
+  </a>
 </p>
-
-<p align = center>
-	<a href="https://github.com/huskeee/tkvideo/graphs/contributors">
-		<img src="https://img.shields.io/github/contributors/huskeee/tkvideo.svg?style=flat-square" alt="Contributors" />
-	</a>
-	<a href="https://github.com/huskeee/tkvideo/network/members">
-		<img src="https://img.shields.io/github/forks/huskeee/tkvideo.svg?style=flat-square" alt="Forks" />
-	</a>
-	<a href="https://github.com/huskeee/tkvideo/stargazers">
-		<img src="https://img.shields.io/github/stars/huskeee/tkvideo.svg?style=flat-squarem/huskeee/tkvideo/network/members" alt="Stargazers" />
-	</a>
-	<a href="https://github.com/huskeee/tkvideo/issues">
-		<img src="https://img.shields.io/github/issues/huskeee/tkvideo.svg?style=flat-square" alt="Issues" />
-	</a>
-	<a href="https://github.com/huskeee/tkvideo/blob/master/LICENSE">
-		<img src="https://img.shields.io/github/license/huskeee/tkvideo.svg?style=flat-square" alt="MIT License" />
-	</a>
-</p>
-
-<!-- ABOUT THE PROJECT -->
 
 ## About The Project
 
-tkVideo is a Python module for playing videos in GUIs created with tkinter. It does so by binding to a `tkinter.Label` widget of the user's choice and rapidly changing its image object.
+tkVideo is a Python module for playing videos in GUIs created with tkinter.
+It does so by binding to a `tkinter.Label` widget of the user's choice and rapidly changing its image object.
 
 ### Built With
 
@@ -109,7 +121,7 @@ root.mainloop()
 
 ## Issues & Suggestions
 
-Have a problem that needs to be solved or a suggestion to make? See the [issues](https://github.com/huskeee/tkvideo/issues) page.
+Have a problem that needs to be solved or a suggestion to make? See the [issues](https://github.com/MysteryBlokHed/tkvideo-moviepy/issues) page.
 
 ## License
 
