@@ -43,48 +43,47 @@ tkVideo is a Python module for playing videos in GUIs created with tkinter. It d
 
 ## Installation
 
-### End-users:
+### Users
 
-- Clone the repo and run `setup.py`
-
-```sh
-git clone https://github.com/huskeee/tkvideo.git
-python ./tkvideo/setup.py
-```
-
-or
-
-- Install the package from PyPI
+### From PyPI
 
 ```sh
 pip install tkvideo
 ```
 
-### Developers and contributors
-
-- Clone the repo and install the module in developer mode
+#### From cloned repo
 
 ```sh
-git clone https://github.com/huskeee/tkvideo.git
-python ./tkvideo/setup.py develop
+git clone https://github.com/MysteryBlokHed/tkvideo-moivepy
+cd tkvideo-moviepy
+python setup.py install
+```
+
+### Developers and contributors
+
+#### From cloned repo
+
+```sh
+git clone https://github.com/MysteryBlokHed/tkvideo-moivepy
+cd tkvideo-moviepy
+python setup.py develop
 ```
 
 or
 
-- Install the package from PyPI in editable mode
+#### Editable mode from PyPI
 
 ```sh
-pip install -e tkvideo
+pip install -e tkvideo-moviepy
 ```
 
 This will create a shim between your code and the module binaries that gets updated every time you change your code.
 
-<!-- USAGE EXAMPLES -->
-
 ## Usage
 
-- Import tkinter and tkvideo
+- Import tkinter and tkvideo-moviepy
 - Create `Tk()` parent and the label you'd like to use
+- Get a moviepy video
 - Create `tkvideo` object with its parameters (moviepy clip, label name, whether to loop the video or not and size of the video)
 - Start the player thread with `<player_name>.play()`
 - Start the Tk main loop
@@ -108,22 +107,10 @@ player.play()
 root.mainloop()
 ```
 
-## Issues / suggestions
+## Issues & Suggestions
 
 Have a problem that needs to be solved or a suggestion to make? See the [issues](https://github.com/huskeee/tkvideo/issues) page.
 
 ## License
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
-
-## Contact
-
-Xenofon Konitsas - [@huskeeeeee](https://twitter.com/huskeeeeee) - konitsasx@gmail.com
-
-Project Link: [https://github.com/huskeee/tkvideo](https://github.com/huskeee/tkvideo)
-
-## Special thanks to
-
-- [@Pythonista](https://stackoverflow.com/users/5230901/pythonista) on StackOverflow for the frame loading code
-
-##### Readme file created using [Othneil Drew's awesome template ♥](https://github.com/othneildrew/Best-README-Template)
