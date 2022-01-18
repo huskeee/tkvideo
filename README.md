@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/MysteryBlokHed/tkvideo-moviepy">
-    <img src="https://raw.githubusercontent.com/MysteryBlokHed/tkvideo-moviepy/master/images/logo.png" alt="Logo" >
+    <img src="images/logo.png" alt="Logo" >
   </a>
 
   <h1 align="center">tkVideo</h1>
