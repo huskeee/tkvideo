@@ -47,12 +47,6 @@
 tkVideo is a Python module for playing videos in GUIs created with tkinter.
 It does so by binding to a `tkinter.Label` widget of the user's choice and rapidly changing its image object.
 
-### Built With
-
-- [tkinter (Python built-in)](https://docs.python.org/3/library/tkinter.html)
-- [imageio](https://imageio.github.io)
-- [Pillow](https://pypi.org/project/Pillow/)
-
 ## Installation
 
 ### Users
@@ -60,7 +54,7 @@ It does so by binding to a `tkinter.Label` widget of the user's choice and rapid
 ### From PyPI
 
 ```sh
-pip install tkvideo
+pip install tkvideo-moviepy
 ```
 
 #### From cloned repo
@@ -104,7 +98,7 @@ Example code:
 
 ```py
 from tkinter import *
-from tkvideo import tkvideo
+from tkvideo import TkVideo
 from moviepy.editor import VideoFileClip
 
 root = Tk()
@@ -113,7 +107,7 @@ my_label.pack()
 
 clip = VideoFileClip('path/to/video.mp4')
 
-player = tkvideo(clip, my_label, loop = 1, size = (1280,720))
+player = TkVideo(clip, my_label, loop = 1, size = (1280,720))
 player.play()
 
 root.mainloop()
