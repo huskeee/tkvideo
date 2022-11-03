@@ -32,16 +32,19 @@ class tkvideo():
         :param hz:
             Sets the video's frame rate (float, 
             default 0 is unchecked) 
+        :callback:
+            Callback function after video ends (default None)
     
     """
-    def __init__(self, path, label, loop = 0, size = (640,360), hz = 0):
+    def __init__(self, path, label, loop = 0, size = (640,360), hz = 0, callback=None):
         self.path = path
         self.label = label
         self.loop = loop
         self.size = size
         self.hz = hz
+        self.callback = callback
     
-    def load(self, path, label, loop, hz):
+    def load(self, path, label, loop, hz, callback):
         """
             Loads the video's frames recursively onto the selected label widget's image parameter.
             Loop parameter controls whether the function will run in an infinite loop
@@ -68,25 +71,34 @@ class tkvideo():
                     if diff > 0:
                         sleep(diff)
                     before = perf_counter()
+                if callback:
+                    thread = threading.Thread(target=callback)
+                    thread.daemon = 1
+                    thread.start()
         else:
             before = perf_counter()
             for image in frame_data.iter_data():
-                    frame_image = ImageTk.PhotoImage(Image.fromarray(image).resize(self.size))
-                    label.config(image=frame_image)
-                    label.image = frame_image
+                frame_image = ImageTk.PhotoImage(Image.fromarray(image).resize(self.size))
+                label.config(image=frame_image)
+                label.image = frame_image
 
-                    diff = frame_duration + before
-                    after = perf_counter()
-                    diff = diff - after 
-                    if diff > 0:
-                        sleep(diff)
-                    before = perf_counter()
+                diff = frame_duration + before
+                after = perf_counter()
+                diff = diff - after 
+                if diff > 0:
+                    sleep(diff)
+                before = perf_counter()
+
+            if callback:
+                thread = threading.Thread(target=callback)
+                thread.daemon = 1
+                thread.start()
 
     def play(self):
         """
             Creates and starts a thread as a daemon that plays the video by rapidly going through
             the video's frames.
         """
-        thread = threading.Thread(target=self.load, args=(self.path, self.label, self.loop, self.hz))
+        thread = threading.Thread(target=self.load, args=(self.path, self.label, self.loop, self.hz, self.callback))
         thread.daemon = 1
         thread.start()
