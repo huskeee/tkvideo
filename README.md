@@ -1,4 +1,5 @@
-
+<h1><strong>NOTE: This repository is archived as I'm no longer able to work on this project. Thanks to everyone who contributed to this.</strong></h1>
+<hr></hr>
 <p align="center">
   <a href="https://github.com/huskeee/tkvideo">
     <img src="https://raw.githubusercontent.com/huskeee/tkvideo/master/images/logo.png" alt="Logo" >
